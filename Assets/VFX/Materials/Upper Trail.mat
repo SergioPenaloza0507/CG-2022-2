@@ -20,15 +20,15 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: YFadeTransparent
+  m_Name: Upper Trail
   m_Shader: {fileID: 4800000, guid: 9a73601ffd9149fe8da13f42affad96e, type: 3}
   m_ValidKeywords:
   - ALPHAMASKANIMMODE_TIME
   - ALPHAMASKINGMODE_NONE
+  - CLAMP_MAIN_TEX
   - EMISSIONMODE_MATERIAL
   - MAINTEXANIMMODE_CUSTOMVERTEXSTREAMS
   - MAINTEXDISTORTNOISEANIMMODE_TIME
-  - SOFT_PARTICLES
   m_InvalidKeywords:
   - _EMISSION
   - _FLIPBOOKBLENDING_OFF
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 45a5b32c7cce48e44ba53ef305cd18fe, type: 3}
+        m_Texture: {fileID: 2800000, guid: 93be3108cdaa1fd4687bb3d1507129ac, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -77,7 +77,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 45a5b32c7cce48e44ba53ef305cd18fe, type: 3}
+        m_Texture: {fileID: 2800000, guid: b6153acb371db09439a09f917628d826, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex3D:
@@ -133,7 +133,7 @@ Material:
     - _CameraFadingEnabled: 0
     - _CameraFarFadeDistance: 2
     - _CameraNearFadeDistance: 1
-    - _ClampMainTex: 0
+    - _ClampMainTex: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _ColorMode: 0
@@ -163,12 +163,12 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SoftParticles: 1
+    - _SoftParticles: 0
     - _SoftParticlesEnabled: 0
-    - _SoftParticlesFalloff: 0.5
+    - _SoftParticlesFalloff: 0.01
     - _SoftParticlesFarFadeDistance: 1
     - _SoftParticlesNearFadeDistance: 0
-    - _SoftParticlesThreshold: 0.3
+    - _SoftParticlesThreshold: 0.1
     - _SpecularHighlights: 1
     - _SrcBlend: 5
     - _Surface: 1
@@ -182,7 +182,7 @@ Material:
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.14117648, g: 1.4980392, b: 1.1921569, a: 1}
+    - _EmissionColor: {r: 0.18206069, g: 1.8301888, b: 1.1335691, a: 1}
     - _MainTexAnimParams: {r: 1, g: 1, b: 1, a: 1}
     - _MainTexDistortAnimParams: {r: 0, g: 0, b: 1, a: 1}
     - _MainTexTwirlParams: {r: -0.5, g: -0.5, b: 0, a: 0}

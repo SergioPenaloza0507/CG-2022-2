@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: URP Custom_Particles Uber Unlit
+  m_Shader: {fileID: 4800000, guid: 9a73601ffd9149fe8da13f42affad96e, type: 3}
+  m_ShaderKeywords: ALPHAMASKANIMMODE_TIMEPERIODIC ALPHAMASKINGMODE_NONE MAINTEXANIMMODE_TIME
+    MAINTEXDISTORTNOISEANIMMODE_TIME SOFT_PARTICLES
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMask:
+        m_Texture: {fileID: 2800000, guid: d9bf558840f64618b84ff10f17cab94f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistortMap:
+        m_Texture: {fileID: 2800000, guid: a81ff0b08e6fb294b907df40447719d1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex3D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexDistortNoise:
+        m_Texture: {fileID: 2800000, guid: d39eae9621d11a246a3b1507b467aea8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - AlphaMaskAnimMode: 2
+    - AlphaMaskingMode: 0
+    - EmissionMode: 0
+    - MainTexAnimMode: 0
+    - MainTexDistortNoiseAnimMode: 0
+    - SoftParticles: 1
+    - _BlendOperation: 0
+    - _ClampMainTex: 0
+    - _DistortionBlend: 1
+    - _DistortionStrength: 0.1
+    - _DistortionToggle: 0
+    - _DstBlend: 10
+    - _MainTexDistortStrength: 0
+    - _MainTexTwirlStrength: 51.53
+    - _SoftParticles: 1
+    - _SoftParticlesFalloff: 0.4
+    - _SoftParticlesThreshold: 0
+    - _SrcBlend: 1
+    - _Use3DTextures: 0
+    m_Colors:
+    - _AlphaMaskAnimParams: {r: 1, g: 0, b: 1, a: 1}
+    - _AlphaMaskDirection: {r: 0.1, g: 1, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0}
+    - _MainTexAnimParams: {r: 0, g: 0, b: 0, a: 0}
+    - _MainTexDistortAnimParams: {r: 0.2, g: 0.2, b: 1, a: 0.1}
+    - _MainTexDistortParams: {r: 0, g: 0, b: 1, a: 1}
+    - _MainTexTwirlParams: {r: -0.5, g: -0.5, b: 0, a: 0}
+  m_BuildTextureStacks: []
