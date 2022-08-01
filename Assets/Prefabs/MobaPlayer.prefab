@@ -1099,6 +1099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementControllerSettings: {fileID: 11400000, guid: a455dcb319c07994c9683f9e2c908ba8,
     type: 2}
+  cameraControllerSettings: {fileID: 0}
 --- !u!114 &4352115269299695330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,7 +1113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDelay: 5
-  isEnabled: 0
 --- !u!114 &4352115269299695331
 MonoBehaviour:
   m_ObjectHideFlags: 0

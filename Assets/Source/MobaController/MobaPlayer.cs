@@ -13,7 +13,10 @@ public class MobaPlayer : MonoBehaviour
     public MobaAnimationController AnimationController { get; private set; }
     public MobaMovementController MovementController { get; private set; }
 
+    [Expandable]
     public MobaPlayerMovementControllerConfig movementControllerSettings;
+    [Expandable]
+    public MobaPlayerCameraControllerConfig cameraControllerSettings;
 
     public void BroadcastInputToListeners<TAction>(TAction action) where TAction : struct
     {
