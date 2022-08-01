@@ -1,0 +1,26 @@
+﻿{
+  "Day-Night Skyboxes" : {
+    "url" : "https://assetstore.unity.com/packages/2d/textures-materials/sky/10-skyboxes-pack-day-night-32236",
+    "projectRootPath" : "Day-Night Skyboxes"
+  },
+  "Hierarchy 2" : {
+    "url" : "https://assetstore.unity.com/packages/tools/utilities/hierarchy-2-166483",
+    "projectRootPath" : "Hierarchy 2"
+  },
+  "LeanTween" : {
+    "url" : "https://assetstore.unity.com/packages/tools/animation/leantween-3595",
+    "projectRootPath" : "LeanTween"
+  },
+  "Basic Motions" : {
+    "url" : "https://assetstore.unity.com/packages/3d/animations/basic-motions-free-154271",
+    "projectRootPath" : "Kevin Iglesias/Basic Motions"
+  },
+  "Melee Warrior" : {
+    "url" : "https://assetstore.unity.com/packages/3d/animations/melee-warrior-animations-free-165785",
+    "projectRootPath" : "Kevin Iglesias/Melee Warrior Animations"
+  },
+  "Fighter Pack Bundle" : {
+    "url" : "https://assetstore.unity.com/packages/3d/animations/fighter-pack-bundle-free-36286",
+    "projectRootPath" : "Fighter Pack Bundle FREE"
+  }
+}
