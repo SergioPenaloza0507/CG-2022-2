@@ -26,5 +26,9 @@
   "Powerful Sword Pack (Greatsword + Katana)" : {
     "url" : "https://assetstore.unity.com/packages/3d/animations/powerful-sword-pack-great-sword-katana-183324",
     "projectRootPath" : "Grruzam Powerful Sword Animation(Great Sword, Katana)"
+  },
+  "Rigify To Unity" : {
+    "url" : "https://assetstore.unity.com/packages/tools/animation/rigify-to-unity-735",
+    "projectRootPath" : "RigifyToUnity"
   }
 }

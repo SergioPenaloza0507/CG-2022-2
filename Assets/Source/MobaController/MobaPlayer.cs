@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(MobaInputHandler))]
 [RequireComponent(typeof(MobaAnimationController))]
 [RequireComponent(typeof(MobaMovementController))]
+[RequireComponent(typeof(MobaAttackController))]
 public class MobaPlayer : MonoBehaviour
 {
     public MobaCameraController CameraController { get; private set; }
@@ -14,6 +15,15 @@ public class MobaPlayer : MonoBehaviour
 
     public MobaPlayerMovementControllerConfig movementControllerSettings;
 
+    public void BroadcastInputToListeners<TAction>(TAction action) where TAction : struct
+    {
+        IInputListener<TAction>[] listeners = GetComponents<IInputListener<TAction>>();
+        foreach (IInputListener<TAction> inputListener in listeners)
+        {
+            inputListener.Listen(action);
+        }
+    }
+    
     private void Awake()
     {
         CameraController = GetComponent<MobaCameraController>();

@@ -11,6 +11,7 @@ public class MobaAnimationController : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        anim.SetTrigger("Intro");
     }
 
     public void StartRunning()
@@ -21,5 +22,21 @@ public class MobaAnimationController : MonoBehaviour
     public void StopRunning()
     {
         anim.SetBool("Moving", false);
+    }
+
+    public void StartAttackCombo(int comboIndex)
+    {
+        anim.SetTrigger($"Combo {comboIndex} Enter");
+    }
+
+    public void KeepAttacking()
+    {
+        anim.SetTrigger("Combo Follow");
+    }
+    
+    public void StopAttacking()
+    {
+        anim.ResetTrigger("Combo Follow");
+        anim.SetTrigger("Combo Exit");
     }
 }

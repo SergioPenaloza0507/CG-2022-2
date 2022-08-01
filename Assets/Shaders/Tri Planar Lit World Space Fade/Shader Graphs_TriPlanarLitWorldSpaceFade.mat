@@ -70,14 +70,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _FADEAXIS: 1
-    - _Fade_Falloff: 1.57
-    - _Fade_Start: 2
+    - _Fade_Falloff: 7
+    - _Fade_Start: 3
     - _Metallic: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0
     m_Colors:
-    - _Main_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Main_Color: {r: 0.483346, g: 0.53202474, b: 0.631, a: 1}
     - _Triplanar_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Triplanar_Tiling: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
