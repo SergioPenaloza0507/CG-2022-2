@@ -201,7 +201,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.35637084, y: -0.33460134, z: 0.13844083, w: 0.8613222}
+  m_LocalRotation: {x: 0.35798475, y: -0.32438126, z: 0.1342123, w: 0.865223}
   m_LocalPosition: {x: 4.99, y: 7.73, z: -4.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -884,13 +884,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4352115267911212876, guid: a8d9aa9114d5c834b9b58d34a94d8641,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.865223
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352115267911212876, guid: a8d9aa9114d5c834b9b58d34a94d8641,
+        type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.35637084
+      value: 0.35798475
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352115267911212876, guid: a8d9aa9114d5c834b9b58d34a94d8641,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.32438126
       objectReference: {fileID: 0}
     - target: {fileID: 4352115267911212876, guid: a8d9aa9114d5c834b9b58d34a94d8641,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.13844083
+      value: 0.1342123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4352115267911212877, guid: a8d9aa9114d5c834b9b58d34a94d8641,
+        type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 2.069869
       objectReference: {fileID: 0}
     - target: {fileID: 4352115269299695330, guid: a8d9aa9114d5c834b9b58d34a94d8641,
         type: 3}
@@ -902,5 +917,20 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 330585545}
+    - target: {fileID: 5321318934934193119, guid: a8d9aa9114d5c834b9b58d34a94d8641,
+        type: 3}
+      propertyPath: comboLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321318934934193119, guid: a8d9aa9114d5c834b9b58d34a94d8641,
+        type: 3}
+      propertyPath: comboCooldown
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5321318934934193119, guid: a8d9aa9114d5c834b9b58d34a94d8641,
+        type: 3}
+      propertyPath: attackComboDelays.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8d9aa9114d5c834b9b58d34a94d8641, type: 3}

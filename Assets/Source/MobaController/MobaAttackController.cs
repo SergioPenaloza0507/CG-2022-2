@@ -7,26 +7,17 @@ using CONTEXT = MOBA.ActionContextHolder;
 
 public class MobaAttackController : MobaPlayerBehaviour, IInputListener<ByteAction>
 {
-    [SerializeField] private float[] attackComboDelays;
-
-    private bool isAttacking;
-    
+    [SerializeField] private int comboLength;
     [SerializeField]private int currentAttackIndex;
-    private float comboDelayTimer;
+    
+    [SerializeField]private float comboCooldown;
+    private float comboCooldownTimer;
+    private bool coolDown;
 
     private void Update()
     {
-        // if (isAttacking && currentAttackIndex < attackComboDelays.Length)
-        // {
-        //     comboDelayTimer += Time.deltaTime;
-        //     if (comboDelayTimer > attackComboDelays[currentAttackIndex])
-        //     {
-        //         currentAttackIndex = 0;
-        //         comboDelayTimer = 0;
-        //         player.AnimationController.StopAttacking();
-        //         isAttacking = false;
-        //     }
-        // }
+        if(coolDown)
+            comboCooldownTimer += Time.deltaTime;
     }
 
     public bool ValidateAction(ByteAction action)
@@ -36,25 +27,30 @@ public class MobaAttackController : MobaPlayerBehaviour, IInputListener<ByteActi
 
     public void Listen(ByteAction action)
     {
-        if (currentAttackIndex >= attackComboDelays.Length)
-        {
-            currentAttackIndex = 0;
-            comboDelayTimer = 0;
-            return;
-        }
+        // if (coolDown)
+        // {
+        //     // if (comboCooldownTimer < comboCooldown)
+        //     // {
+        //     //     return;
+        //     // }
+        //
+        //     comboCooldownTimer = 0;
+        //     currentAttackIndex = 0;
+        // }
 
-        if (currentAttackIndex == 0)
-        {
-            player.AnimationController.StartAttackCombo(action.value);
-            isAttacking = true;
-        }
-        else
-        {
+        // if (currentAttackIndex == 0)
+        // {
+        //     player.AnimationController.StartAttackCombo(action.value);
+        // }
+        // else
+        // {
             player.AnimationController.KeepAttacking();
-        }
-
-        currentAttackIndex++;
-        comboDelayTimer = 0;
-        
+        // }
+        //
+        // currentAttackIndex++;
+        // if (currentAttackIndex >= comboLength +1)
+        // {
+        //     coolDown = true;
+        // }
     }
 }
